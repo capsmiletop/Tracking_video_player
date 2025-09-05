@@ -1,0 +1,66 @@
+VPS management platform
+
+URL https://vpspanel.web-hosting.com
+Username: u_2168293
+Password: WDfSWhOkRX3SEaAOr3
+
+Host Name phucandjoeouroneday.com
+          
+IP address 66.29.135.226
+Port 22
+Username root
+Password hqjXrZ4MBbW2d504T1
+
+
+https://www.dropbox.com/scl/fi/rps0g5ifa1g0iazoeeo0k/1.-What-did-you-learn-at-coding-bootcamp.mp4?rlkey=e8ml1d7u6gzass2xxfh34mdyb&e=1&st=jif34vvr&raw=1
+
+
+https://www.dropbox.com/scl/fi/64swtgsbm5bquwv293zuh/1.How-to-use-this-course.mp4?rlkey=fr5imrmcborcwjosk617dnj4h&st=rdei7pih&raw=1
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+PhucandJoeouroneday.com/Viet
+PhucandJoeouroneday.com/English
+
+English Version:
+
+https://www.dropbox.com/scl/fi/fwsian7jjm0s9oep1e5ac/The-Memories-English-Final.mp4?rlkey=rmrlkou7r2bhxbecj43utej3b&st=kri85fb4&dl=0
+
+Viet Version:
+
+https://www.dropbox.com/scl/fi/uub9luaf99dlf3215o925/The-Memories-Viet-Final.mp4?rlkey=iy1glqciupfm9t1jqmxita8eg&st=2357gogb&dl=0
+
+
+image welcome back
+
+https://www.dropbox.com/scl/fi/myircy9ifuobf46uz1u5e/welcome-back.png?rlkey=8q551lfuaiirr9egznmxk3pgb&st=ft9htncf&dl=0
+
+image our-one-day
+
+https://www.dropbox.com/scl/fi/yhfo276juokm8uib80bfz/Our-One-Day.png?rlkey=gst1m4acmfzvd0sphwxzafdaf&st=ohktbshv&dl=0
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Tracker js
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="8069bb06-048a-4c1e-ba38-2305fed475d7"></script>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+cd /var/www/Video-Player/frontend
+cd /etc/nginx/sites-available
+nano /etc/nginx/sites-available/videoplayer
+sudo systemctl reload nginx
+sudo nginx -t
+
+GitHub -- token -- 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
+
+cd /var/www/VideoPlayer/frontend
+/var/www/VideoPlayer/frontend/src/html
+
+nano /var/www/VideoPlayer/frontend/src/js/tracker.js
+nano /var/www/VideoPlayer/frontend/src/js/video.js
+nano /var/www/VideoPlayer/backend/server.js
+cd /var/www/VideoPlayer/backend/
+
+ nano /etc/postgresql/14/main/postgresql.conf

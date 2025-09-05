@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video View Times</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+</head>
+<body class="p-4">
+
+  <div class="container">
+    <h2 class="mb-4">Video View Times</h2>
+
+    <!-- Filters -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <input type="text" id="filterCountry" class="form-control" placeholder="Filter by Country">
+      </div>
+      <div class="col-md-3">
+        <input type="text" id="filterIP" class="form-control" placeholder="Filter by IP">
+      </div>
+      <div class="col-md-3">
+        <input type="text" id="filterVideo" class="form-control" placeholder="Filter by Video Name">
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-secondary w-100" onclick="resetFilters()">Reset Filters</button>
+      </div>
+    </div>
+
+    <table id="viewtimesTable" class="table table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Country</th>
+          <th>IP</th>
+          <th>City</th>
+          <th>Region</th>
+          <th>Timezone</th>
+          <th>Video Name</th>
+          <th>View Time (sec)</th>
+          <th>Updated Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- jQuery + DataTables -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script src="../js/tracker.js"></script>
+  <script>
+    
+    function resetFilters() {
+      $('#filterCountry').val('');
+      $('#filterIP').val('');
+      $('#filterVideo').val('');
+      table.search('').columns().search('').draw();
+    }
+
+  </script>
+</body>
+</html>

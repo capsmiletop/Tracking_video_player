@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Player English Version</title>
+  <link rel="stylesheet" href="../src/css/modal.css">
+  <link rel="stylesheet" href="../src/css/video.css">
+  <style>
+    .controls {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .controls.show {
+      opacity: 1;
+    }
+</style>
+</head>
+<body>
+
+<div class="layout">
+  
+  <div class="video-section">
+
+    <!-- <img id="myImg" src="../img/welcome-back.png" alt="Snow" style="width:100%;"> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" src="../src/img/welcome-back.png" >
+    </div>
+
+    <video id="video"
+      src="../src/videos/english/enlish.mp4"
+      muted
+      playsinline
+      >
+    </video>
+
+    <div class="controls">
+      <div class="controls-left">
+        <div class="time" id="time">00:00:00 / 00:00:00</div>
+        <button class="btn" id="playPause">⏸️</button>
+        <button class="btn" id="stop">⏹️</button>
+      </div>
+      <div class="progress-bar" id="progressBar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="controls-right">
+        <span id="volumeIcon"></span>
+        <input type="range" id="volume" class="volume-control" min="0" max="1" step="0.01" value="1"/>
+        <button class="btn" id="fullscreen">⛶</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p id="name" data-src = "https://www.dropbox.com/scl/fi/fwsian7jjm0s9oep1e5ac/The-Memories-English-Final.mp4?rlkey=rmrlkou7r2bhxbecj43utej3b&st=kri85fb4&raw=1">
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<!-- <script>
+    if(Hls.isSupported()) {
+        var video = document.getElementById('video');
+        var hls = new Hls();
+        hls.loadSource('../videos/english/index.m3u8');
+        hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        // For Safari/iOS native HLS support
+        video.src = '../videos/english/index.m3u8';
+    }
+</script> -->
+<script src="../src/js/video.js"></script>
+<script src="../src/js/modalCtlFade.js"></script>
+
+</body>
+</html>
